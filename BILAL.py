@@ -17,8 +17,8 @@ from datetime import datetime
 
 import os, sys
 
-# Tumhara WhatsApp channel link
-channel_link = "https://whatsapp.com/channel/0029Vb6dc46AojYsiJ8qER1R"
+# Tumhara WhatsApp Group link
+channel_link = "https://chat.whatsapp.com/BsOxo1XxmiPJJg2DkXR0Kt"
 
 def first_step():
     os.system("clear")
