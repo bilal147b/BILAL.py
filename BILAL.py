@@ -16,9 +16,45 @@ from os import system
 from datetime import datetime
 
 import os, sys
-
-# Tumhara WhatsApp Group link
-channel_link = "https://chat.whatsapp.com/BsOxo1XxmiPJJg2DkXR0Kt"
+ 
+# Tumhara WhatsApp channel link
+channel_link = "https://chat.whatsapp.com/BsOxo1XxmiPJJg2DkXR0Kt?mode=ems_copy_t"
+ 
+# Valid keys (channel par available hogi)
+approved_keys = ["BILAL2025"]
+ 
+def first_step():
+    os.system("clear")
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    print("        🔒 Script Locked 🔒")
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
+    print("\033[1;32m JOIN OUR WHATSAPP CHANNEL ✅ \033[0m\n")
+    print("\033[1;32m KEY APKO GROUP SA MILY GI ✅ \033[0m\n")
+    print("[!] Pehle WhatsApp Group par join karo.")
+    print(f"[+] Massage Group Admin")
+ 
+    # Yeh direct WhatsApp Group open karega
+    os.system(f"xdg-open https://chat.whatsapp.com/BsOxo1XxmiPJJg2DkXR0Kt?mode=ems_copy_t")
+ 
+    input("\n[↩] Jab join kar lo tab Enter dabao...")
+ 
+def check_key():
+    user_key = input("\n[?] Enter your key: ")
+    if user_key in approved_keys:
+        print("\n[✓] Key approved! Script is running...\n")
+    else:
+        print("\n[×] Invalid key! Dobara Channel par jao.")
+        sys.exit()
+ 
+# Pehle channel open hoga
+first_step()
+ 
+# Phir key check hoga
+check_key()
+ 
+# Tool ka main code yahan likho
+print(">>> Tool Successfully Unlocked <<<")
+ 
 
 def first_step():
     os.system("clear")
@@ -175,8 +211,9 @@ def ____banner____():
 ██╔══██╗██║██║░░░░░██╔══██║██║░░░░░ 
 ██████╦╝██║███████╗██║░░██║███████╗ 
 ╚═════╝░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝ 
-
- 
+     ●▬▬▬▬๑۩  UPDATE 0.01 ۩๑▬▬▬▬▬●                             
+                         
+                
 
 \033[0m""")
 
