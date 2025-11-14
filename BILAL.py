@@ -36,7 +36,6 @@ def first_step():
     # Yeh direct WhatsApp Group open karega
     os.system(f"xdg-open https://chat.whatsapp.com/BsOxo1XxmiPJJg2DkXR0Kt?mode=ems_copy_t")
  
-    input("\n[↩] Jab join kar lo tab Enter dabao...")
  
 def check_key():
     user_key = input("\n[?] Enter your key: ")
@@ -212,8 +211,6 @@ def ____banner____():
 ╚═════╝░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝ 
 ╚══════════════════════════════════╝                 
                          
-                
-
 \033[0m""")
 
 
